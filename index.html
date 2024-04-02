@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Russo+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+  
+<body class="bg-light">  
+    <header class="sticky-top position-fixed header">
+        <nav class="navbar navbar-expand-md pe-4 ps-4" data-bs-theme="dark"> 
+            <div class="container">
+                <a class="navbar-brand" href="#Inicio"> 
+                    <span class="text-light fw-bold">Turno</span><span class="fw-normal">Wade</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header"> 
+                        <span class="offcanvas-title text-light fw-bold" id="offcanvasLabel">Turno</span><span class="fw-normal">Wade</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav flex-grow-1">  
+                            <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="#Intro" class="nav-link">Intro</a></li>
+                            <li class="nav-item"><a href="#Caract" class="nav-link">Características</a></li>
+                            <li class="nav-item"><a href="#Precio" class="nav-link">Precio</a></li> 
+                            <li class="nav-item"><a href="#Preguntas" class="nav-link">Preguntas</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header> 
+    <main>  
+        <article id="Inicio" class="Inicio d-flex justify-content-center align-items-center">
+            <div class="texto_inicio">
+                <h3 class="text-light fuente_inicio">Controlá los turnos de una manera más práctica y eficiente</h3>  
+                
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <button type="button" class="me-3 btn btn-primary btn-lg btn_compra">Comprar</button>   
+                    <button type="button" class="btn btn-outline-light btn-lg btn_demo_uno">Demo</button>
+                </div>
+            </div> 
+        </article>
+        <article id="Intro" class="container descripcion flex-wrap pe-4 ps-4">
+            <div class="row">
+                <h2 class="col-md col-sm text-dark">¿En qué te ayudaria tenerlo?</h2>  
+                <p class="col-md-7 col-sm-12 mt-5 mt-md-0 text-dark">TurnoWave es una plataforma innovadora diseñada para ofrecer una gestión eficiente y ágil de los turnos. Con su enfoque intuitivo y su conjunto de características, TurnoWave simplifica el proceso de administración de turnos, permitiendo a los usuarios optimizar su tiempo y recursos. Con su interfaz fácil de usar y su capacidad para adaptarse a diversos sectores y entornos. Descubre cómo TurnoWave puede mejorar la productividad y la organización en tu negocio hoy mismo.</p>  
+            </div>
+        </article>
+        <article id="Caract" class="container-lg container-sm caracteristica pe-4 ps-4"> 
+            <div class="mb-5">
+                <h2 class="text-dark titulo_carac">Características del software</h2>
+            </div> 
+      
+            <div class="row text-center me-0 ms-0">
+                <div class="col-md col-lg bg-light card p-4">
+                    <div class="align-self-center">
+                        <img class="img-fluid d-block" src="./img/tokyo-browser-window-with-tab-bars.png" alt="">
+                    </div>
+                    
+                    <div class="desc_carac">
+                        <h3>Intuitivo</h3>
+                        <p>Software intuitivo que le permite manipularlo de manera simple, sin tener la necesidad de usarlo varias horas para entender su funcionamiento.</p>
+                    </div>
+                </div> 
+                <div class="col-md bg-light card ms-0 me-0 ms-md-4 me-md-4 mt-5 mb-5 mt-md-0 mb-md-0 p-4">
+                    <div class="align-self-center">
+                        <img class="img-fluid d-block" src="./img/tokyo-many-browser-windows-with-different-information.png" alt="">
+                    </div>
+                    <div class="desc_carac">
+                        <h3>Funciones claras</h3>
+                        <p>El software cuenta con funciones que le permitirán cumplir sus objetivos sin contratiempos ni frustraciones.</p>
+                    </div>
+                </div>  
+                <div class="col-md bg-light card p-4">
+                    <div class="align-self-center">
+                        <img class="img-fluid d-block" src="./img/tokyo-online-calendar-with-marked-days-in-a-web-browser.png" alt="">
+                    </div>
+                    <div class="desc_carac">
+                        <h3>Calendario integrado</h3>
+                        <p>Esta integrado en el software, un calendario que le permite manipular los turnos que deba asignar con total simplicidad y agilidad.</p>
+                    </div>
+                </div>
+            </div> 
+        </article>
+        <article id="Precio" class="pe-4 ps-4">
+            <h2 class="texto_precio text-center mb-5">Precio del software</h2> 
+            <div class="row row-cols-1 row-cols-md-2 mb-3 text-center justify-content-center">
+                <div class="col" style="max-width: 450px;">
+                    <div class="card mb-4 rounded-2 shadow-lg">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Gratis</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Software de prueba</li>
+                                <li>Todas las funciones</li> 
+                                <li>Sin pago</li> 
+                                <li>Disponible durante 2 días</li> 
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-demo">Descargar demo</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col" style="max-width: 450px;">
+                    <div class="card mb-4 rounded-2 shadow-sm border-pago">
+                        <div class="card-header py-3 text-border-pago border-pago">
+                            <h4 class="my-0 fw-normal text-light">Pago</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$5.999</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Software para siempre</li>
+                                <li>Todas las funciones</li>
+                                <li>Pago único</li>  
+                                <li>Disponible en todo momento</li> 
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-pago text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </article>
+
+        <article id="Preguntas" class="container pe-4 ps-4" style="max-width: 1200px;">
+            <h2 class="text-center texto_preguntas mb-5">Preguntas frecuentes</h2>
+            <div class="row">
+                <div class="col-md-6 accordion" id="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Requisitos del sistema
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>SO: 64-bit Windows 10 </li>
+                                <li>Procesador: AMD Ryzen 5 1600, Core i5 6600K </li>
+                                <li>Gráficos: AMD Radeon RX 560,Nvidia GeForce GTX 1050 Ti</li>
+                                <li>DirectX: Versión 12</li>
+                                <li>Red: Conexión de banda ancha a Internet</li>
+                                <li>Almacenamiento: 100 GB de espacio disponible</li> 
+                            </ul> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Puedo probar la demo antes de comprar el producto?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                Si, podés descargar la demo. Dura 2 días y posee todas las funcionalidades que la versión pago.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cuánto dura la licencia?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                La licencia es para <strong>siempre!</strong> No tiene mantenimiento mensual. Con la compra tenés 1 año de soporte y actualizaciones sin cargo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 accordion" id="accordionDos">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Hay recursos para aprender a usar el software?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionDos">
+                        <div class="accordion-body">
+                            Si, hay un manual de usuario que estará disponible para aquellos que compren el software.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿El software es multiplataforma?
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionDos">
+                            <div class="accordion-body">
+                                No, solamente funciona con sistemas operativos Windows.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿Cuántos turnos puedo guardar?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionDos">
+                            <div class="accordion-body">
+                                Puede guardar todos los turnos que usted desee, no existe ningún impedimento al respecto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </article>
+        
+        <article id="Final" class="d-flex justify-content-center align-items-center texto_descargar pe-4 ps-4">
+            <div style="width: 600px;">
+                <h2 class="text-dark text_final text-center mb-3">Descubre el funcionamiento en su versión demo</h2>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn_demo bg-light">
+                        <a class="text-decoration-none" href="./img/tokyo-browser-window-with-tab-bars.png" download>Descargar</a>
+                    </button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#Inicio" class="nav-link px-2 text-dark">Inicio</a></li>
+          <li class="nav-item"><a href="#Intro" class="nav-link px-2 text-dark">Intro</a></li>
+          <li class="nav-item"><a href="#Caract" class="nav-link px-2 text-dark">Características</a></li>
+          <li class="nav-item"><a href="#Precio" class="nav-link px-2 text-dark">Precio</a></li> 
+          <li class="nav-item"><a href="#Preguntas" class="nav-link px-2 text-dark">Preguntas</a></li>  
+        </ul>
+        <p class="text-center text-dark">© 2024 Franco Orellana. Todos los derechos reservados.</p>
+    </footer>
+
+
+ 
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">Transferencia bancaria</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">   
+                    <div class="d-flex">
+                        <h3 class="fs-5 text-secondary me-2">Nombre:</h3> 
+                        <h3 class="fs-5 text-secondary">Franco Gabriel Orellana</h3>  
+                    </div>
+                    <div class="d-flex">
+                        <h3 class="fs-5 text-secondary me-2">Banco:</h3> 
+                    </div>
+                    <div class="d-flex">
+                        <h3 class="fs-5 text-secondary me-2">CBU:</h3> 
+                    </div> 
+                    <div class="d-flex">
+                        <h3 class="fs-5 text-secondary me-2">Alias:</h3> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+    </script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body> 
+</html>

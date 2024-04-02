@@ -1,0 +1,196 @@
+:root{
+    --fs-sm: clamp(0.8rem, 2.81vi + 0.1rem, 2.34rem);
+    --fs-base: clamp(1rem, 3.86vi + 0.03rem, 3.13rem);
+    --fs-md: clamp(1.25rem, 5.3vi + -0.08rem, 4.17rem);
+    --fs-lg: clamp(1.56rem, 7.26vi + -0.25rem, 5.55rem);
+    --fs-xl: clamp(1.95rem, 9.91vi + -0.52rem, 7.4rem);
+    --fs-xxl: clamp(2.44rem, 13.5vi + -0.93rem, 9.87rem);
+    --fs-xxxl: clamp(3.05rem, 18.36vi + -1.54rem, 13.15rem);
+} 
+
+/*---------------boton de inicio-------------------*/ 
+.fuente_inicio {
+    font-size: var(--fs-base) !important;
+}
+/*----------------------------------*/ 
+
+ 
+html, body {  
+    margin:0px !important;  
+    height:100% !important;   
+}  
+
+.header{   
+    width: 100% !important;
+    z-index: 100 !important;  
+    background-color: black !important;
+}  
+ 
+
+.Inicio {    
+    background: #333333;   
+    background: -webkit-linear-gradient(to bottom, #dd1818, #000);  
+    background: linear-gradient(to top, #dd1818, #000); 
+ 
+    /* Ajusta la altura del fondo al 100% de la ventana del navegador */
+    height: 100vh; 
+}
+
+.texto_inicio {  
+    max-width: 700px;   
+} 
+
+.Inicio h3
+{ 
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*---------------boton de inicio-------------------*/ 
+
+.btn_compra {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    background-color: #ff0000 !important;
+    border: 1px solid red !important; 
+    font-family: "Maven Pro", sans-serif !important; 
+}
+
+.btn_compra:hover {
+    background-color: #e30202 !important;
+    border: 1px solid #e30202 !important; 
+}
+
+.btn_demo_uno{
+    padding-left: 30px !important;
+    padding-right: 30px !important; 
+    font-family: "Maven Pro", sans-serif !important; 
+}
+/*----------------------------------*/ 
+
+
+
+/*---------------boton de descarga-------------------*/ 
+.btn_demo {
+    --color: red;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 3em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px; 
+    font-size: 20px;
+    font-family: "Maven Pro", sans-serif; 
+    font-weight: bold;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color); 
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .btn_demo::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 220px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .btn_demo:hover {
+    color: white;
+  }
+  
+  .btn_demo:before {
+    top: 100%;
+    left: 100%;
+    transition: .7s all;
+  }
+  
+  .btn_demo:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+
+/*----------------------------------*/
+
+/*---------------SECCION PRECIO-------------------*/
+
+.border-pago{ 
+    border-color: #fa0808 !important;
+}
+.text-border-pago{
+    background-color: #fa0808 !important;
+}
+.btn-pago{
+    background-color: #fa0808 !important;
+}
+
+.btn-pago:hover{
+    background-color: #e30202 !important;
+}
+
+.btn-demo{
+    border-color: #ff0000 !important;
+    color: #ff0000 !important;
+}
+
+.btn-demo:hover{
+    background-color: #ff0000 !important;
+    color: #fff !important;
+}
+
+
+ 
+
+
+/*----------------------------------*/
+
+#Precio,
+#Preguntas{
+    font-family: "Maven Pro", sans-serif !important; 
+}
+
+.btn_preguntas:not(.collapsed) {
+    background-color: #ffdddd !important;
+    color: #8f0d0d !important; 
+}
+
+.btn_preguntas:focus {
+    box-shadow: none !important;
+}
+
+/*---------------DESCRIPCION-------------------*/
+.descripcion h2,
+.titulo_carac,
+.text_final,
+.texto_precio,
+.texto_preguntas { 
+    font-size: 40px; 
+    font-family: "Russo One", sans-serif; 
+} 
+
+.descripcion p,
+.desc_carac {  
+    font-size: 22px; 
+    font-family: "Maven Pro", sans-serif; 
+}
+/*----------------------------------*/
+
+/*---------------MARGENES GENERALES-------------------*/
+#Intro,
+#Caract,
+#Precio,
+#Preguntas,
+#Final{
+    padding-top: 100px;
+    padding-bottom: 100px;
+} 
+/*----------------------------------*/
