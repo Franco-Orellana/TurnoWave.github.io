@@ -1,17 +1,16 @@
 :root{
-    --fs-sm: clamp(0.8rem, 2.81vi + 0.1rem, 2.34rem);
-    --fs-base: clamp(1rem, 3.86vi + 0.03rem, 3.13rem);
-    --fs-md: clamp(1.25rem, 5.3vi + -0.08rem, 4.17rem);
-    --fs-lg: clamp(1.56rem, 7.26vi + -0.25rem, 5.55rem);
-    --fs-xl: clamp(1.95rem, 9.91vi + -0.52rem, 7.4rem);
-    --fs-xxl: clamp(2.44rem, 13.5vi + -0.93rem, 9.87rem);
-    --fs-xxxl: clamp(3.05rem, 18.36vi + -1.54rem, 13.15rem);
+    --fs-sm: clamp(1.25rem, 1.99vi + 0.75rem, 2.34rem);
+--fs-base: clamp(1.56rem, 2.84vi + 0.85rem, 3.13rem);
+--fs-md: clamp(1.95rem, 4.02vi + 0.95rem, 4.17rem);
+--fs-lg: clamp(2.44rem, 5.66vi + 1.03rem, 5.55rem);
+--fs-xl: clamp(3.05rem, 7.91vi + 1.07rem, 7.4rem);
+--fs-xxl: clamp(3.81rem, 11vi + 1.06rem, 9.87rem);
+--fs-xxxl: clamp(4.77rem, 15.24vi + 0.96rem, 13.15rem);
 } 
 
 /*---------------boton de inicio-------------------*/ 
-.fuente_inicio {
-    font-size: var(--fs-base) !important;
-}
+
+
 /*----------------------------------*/ 
 
  
@@ -26,12 +25,9 @@ html, body {
     background-color: black !important;
 }  
  
-
+/*---------------PANTALLA PRINCIPAL-------------------*/ 
 .Inicio {    
-    background: #333333;   
-    background: -webkit-linear-gradient(to bottom, #dd1818, #000);  
-    background: linear-gradient(to top, #dd1818, #000); 
- 
+    background: #fff;   
     /* Ajusta la altura del fondo al 100% de la ventana del navegador */
     height: 100vh; 
 }
@@ -42,13 +38,29 @@ html, body {
 
 .Inicio h3
 { 
-    text-align: center;
+    text-align: start;
     font-size: 50px;
     color: white;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+.img_principal {
+    flex: 1;
+    width: auto !important; /* Ancho deseado del contenedor */
+    max-width: 550px !important;
+    height: 550px; /* Alto deseado del contenedor */
+    overflow: hidden !important; /* Para recortar el contenido que se desborde del contenedor */
+}
+
+.img_principal img {
+    width: 100% !important; /* Ancho deseado del contenedor */
+    height: 100%; /* Alto deseado del contenedor */
+    object-fit: cover !important; /* Ajustar la imagen para cubrir completamente el contenedor */
+}
+/*----------------------------------*/ 
+
 
 /*---------------boton de inicio-------------------*/ 
 
@@ -81,7 +93,8 @@ html, body {
     display: inline-block;
     width: 8em;
     height: 3em;
-    line-height: 2.5em;
+    line-height: 2.8em;
+    text-align: center;
     overflow: hidden;
     margin: 20px; 
     font-size: 20px;
@@ -92,9 +105,9 @@ html, body {
     border: 2px solid var(--color); 
     border-radius: 6px;
     position: relative;
-  }
+}
   
-  .btn_demo::before {
+.btn_demo::before {
     position: absolute;
     content: "";
     background: var(--color);
@@ -102,22 +115,27 @@ html, body {
     height: 200px;
     z-index: -1;
     border-radius: 50%;
-  }
+}
+
+.btn_demo {
+    color: #ff0000;
+}  
   
-  .btn_demo:hover {
-    color: white;
-  }
+.btn_demo:hover {
+    color: white !important;
+}
   
-  .btn_demo:before {
+.btn_demo:before {
     top: 100%;
     left: 100%;
     transition: .7s all;
-  }
+}
   
-  .btn_demo:hover::before {
+.btn_demo:hover::before {
     top: -30px;
     left: -30px;
-  }
+}
+
 
 /*----------------------------------*/
 
@@ -145,14 +163,11 @@ html, body {
 .btn-demo:hover{
     background-color: #ff0000 !important;
     color: #fff !important;
-}
-
-
- 
-
-
+}  
 /*----------------------------------*/
 
+
+/*---------------PREGUNTAS-------------------*/
 #Precio,
 #Preguntas{
     font-family: "Maven Pro", sans-serif !important; 
@@ -166,6 +181,8 @@ html, body {
 .btn_preguntas:focus {
     box-shadow: none !important;
 }
+/*----------------------------------*/
+
 
 /*---------------DESCRIPCION-------------------*/
 .descripcion h2,
@@ -186,7 +203,7 @@ html, body {
 
 /*---------------MARGENES GENERALES-------------------*/
 #Intro,
-#Caract,
+#Caracteristicas,
 #Precio,
 #Preguntas,
 #Final{

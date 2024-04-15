@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-md pe-4 ps-4" data-bs-theme="dark"> 
             <div class="container">
                 <a class="navbar-brand" href="#Inicio"> 
-                    <span class="text-light fw-bold">Turno</span><span class="fw-normal">Wade</span>
+                    <span class="text-light fw-bold">Turno</span><span class="fw-normal">Wave</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
                         <ul class="navbar-nav flex-grow-1">  
                             <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
                             <li class="nav-item"><a href="#Intro" class="nav-link">Intro</a></li>
-                            <li class="nav-item"><a href="#Caract" class="nav-link">Características</a></li>
+                            <li class="nav-item"><a href="#Caracteristicas" class="nav-link">Características</a></li>
                             <li class="nav-item"><a href="#Precio" class="nav-link">Precio</a></li> 
                             <li class="nav-item"><a href="#Preguntas" class="nav-link">Preguntas</a></li> 
                         </ul>
@@ -41,15 +41,22 @@
           </nav>
     </header> 
     <main>  
-        <article id="Inicio" class="Inicio d-flex justify-content-center align-items-center">
-            <div class="texto_inicio">
-                <h3 class="text-light fuente_inicio">Controlá los turnos de una manera más práctica y eficiente</h3>  
-                
-                <div class="d-flex justify-content-center align-items-center mt-5">
-                    <button type="button" class="me-3 btn btn-primary btn-lg btn_compra">Comprar</button>   
-                    <button type="button" class="btn btn-outline-light btn-lg btn_demo_uno">Demo</button>
+        <article id="Inicio" class="Inicio d-flex justify-content-center align-items-center"> 
+            <div class="container">
+                <div class="row flex-nowrap justify-content-between">
+                    <div class="d-flex flex-column justify-content-center order-2 order-md-1" style="flex: 1; max-width: 600px;">
+                        <h3 class="text-dark fuente_inicio text-center text-md-start">Controlá los turnos de una manera más práctica y eficiente</h3>  
+
+                        <div class="d-flex justify-content-md-start justify-content-center mt-5">  
+                            <a class="me-3 btn btn-primary btn-lg btn_compra" href="#Precio">Comprar</a> 
+                            <a class="btn btn-outline-dark btn-lg btn_demo_uno" href="#Precio">Demo</a> 
+                        </div>
+                    </div>  
+                    <div class="d-lg-block d-none ms-5 order-1 order-md-2 img_principal">
+                        <img src="./img/Timeline-bro.png" alt="imagen-de-un-calendario">
+                    </div>   
                 </div>
-            </div> 
+            </div>
         </article>
         <article id="Intro" class="container descripcion flex-wrap pe-4 ps-4">
             <div class="row">
@@ -57,7 +64,7 @@
                 <p class="col-md-7 col-sm-12 mt-5 mt-md-0 text-dark">TurnoWave es una plataforma innovadora diseñada para ofrecer una gestión eficiente y ágil de los turnos. Con su enfoque intuitivo y su conjunto de características, TurnoWave simplifica el proceso de administración de turnos, permitiendo a los usuarios optimizar su tiempo y recursos. Con su interfaz fácil de usar y su capacidad para adaptarse a diversos sectores y entornos. Descubre cómo TurnoWave puede mejorar la productividad y la organización en tu negocio hoy mismo.</p>  
             </div>
         </article>
-        <article id="Caract" class="container-lg container-sm caracteristica pe-4 ps-4"> 
+        <article id="Caracteristicas" class="container-lg container-sm caracteristica pe-4 ps-4"> 
             <div class="mb-5">
                 <h2 class="text-dark titulo_carac">Características del software</h2>
             </div> 
@@ -65,17 +72,17 @@
             <div class="row text-center me-0 ms-0">
                 <div class="col-md col-lg bg-light card p-4">
                     <div class="align-self-center">
-                        <img class="img-fluid d-block" src="./img/tokyo-browser-window-with-tab-bars.png" alt="">
+                        <img class="img-fluid d-block" src="./img/tokyo-browser-window-with-tab-bars.png" alt="imagen-de-una-pantalla">
                     </div>
                     
                     <div class="desc_carac">
                         <h3>Intuitivo</h3>
-                        <p>Software intuitivo que le permite manipularlo de manera simple, sin tener la necesidad de usarlo varias horas para entender su funcionamiento.</p>
+                        <p>Diseñado de tal manera que le permite manipularlo de manera simple, sin tener la necesidad de usarlo varias horas para entender su funcionamiento.</p>
                     </div>
                 </div> 
                 <div class="col-md bg-light card ms-0 me-0 ms-md-4 me-md-4 mt-5 mb-5 mt-md-0 mb-md-0 p-4">
                     <div class="align-self-center">
-                        <img class="img-fluid d-block" src="./img/tokyo-many-browser-windows-with-different-information.png" alt="">
+                        <img class="img-fluid d-block" src="./img/tokyo-many-browser-windows-with-different-information.png" alt="imagen-de-varias-etiquetas">
                     </div>
                     <div class="desc_carac">
                         <h3>Funciones claras</h3>
@@ -84,11 +91,11 @@
                 </div>  
                 <div class="col-md bg-light card p-4">
                     <div class="align-self-center">
-                        <img class="img-fluid d-block" src="./img/tokyo-online-calendar-with-marked-days-in-a-web-browser.png" alt="">
+                        <img class="img-fluid d-block" src="./img/tokyo-online-calendar-with-marked-days-in-a-web-browser.png" alt="imagen-de-un-calendario">
                     </div>
                     <div class="desc_carac">
                         <h3>Calendario integrado</h3>
-                        <p>Esta integrado en el software, un calendario que le permite manipular los turnos que deba asignar con total simplicidad y agilidad.</p>
+                        <p>Posee un calendario que le permite manipular los turnos que deba asignar con total simplicidad y agilidad.</p>
                     </div>
                 </div>
             </div> 
@@ -109,7 +116,7 @@
                                 <li>Sin pago</li> 
                                 <li>Disponible durante 2 días</li> 
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-demo">Descargar demo</button>
+                            <button type="button" class="w-100 btn btn-lg btn-demo" data-bs-toggle="modal" data-bs-target="#gratisModal">Descargar demo</button>
                         </div>
                     </div>
                 </div> 
@@ -118,8 +125,8 @@
                         <div class="card-header py-3 text-border-pago border-pago">
                             <h4 class="my-0 fw-normal text-light">Pago</h4>
                         </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$5.999</h1>
+                        <div class="card-body"> 
+                            <h1 class="card-title"><span>$4.200</span><span  class="ms-2 fs-4" style="text-decoration: line-through;">$5.999</span></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Software para siempre</li>
                                 <li>Todas las funciones</li>
@@ -140,18 +147,17 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Requisitos del sistema
+                            Requisitos mínimos del sistema
                         </button>
                       </h2>
                       <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
                         <div class="accordion-body">
                             <ul>
-                                <li>SO: 64-bit Windows 10 </li>
-                                <li>Procesador: AMD Ryzen 5 1600, Core i5 6600K </li>
-                                <li>Gráficos: AMD Radeon RX 560,Nvidia GeForce GTX 1050 Ti</li>
-                                <li>DirectX: Versión 12</li>
-                                <li>Red: Conexión de banda ancha a Internet</li>
-                                <li>Almacenamiento: 100 GB de espacio disponible</li> 
+                                <li>SO: 64-bit Windows 10 o superior</li>
+                                <li>Procesador: Intel® Celeron / Dual Core</li> 
+                                <li>Memoria: 4 GB de RAM</li>  
+                                <li>Red: No requiere conexión a Internet</li>
+                                <li>Almacenamiento: 20MB de espacio disponible</li> 
                             </ul> 
                         </div>
                       </div>
@@ -164,7 +170,7 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
                             <div class="accordion-body">
-                                Si, podés descargar la demo. Dura 2 días y posee todas las funcionalidades que la versión pago.
+                                <strong>Si,</strong> podés descargar la DEMO. <strong>Dura 2 días</strong> y posee todas las funcionalidades que la versión pago.
                             </div>
                         </div>
                     </div>
@@ -176,7 +182,7 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
                             <div class="accordion-body">
-                                La licencia es para <strong>siempre!</strong> No tiene mantenimiento mensual. Con la compra tenés 1 año de soporte y actualizaciones sin cargo.
+                                La licencia es para <strong>siempre!</strong>. No tiene mantenimiento mensual. Con la compra tenés 1 año de soporte.
                             </div>
                         </div>
                     </div>
@@ -185,12 +191,12 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            ¿Hay recursos para aprender a usar el software?
+                            ¿Hay reembolso una vez hecha la compra?
                         </button>
                       </h2>
                       <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionDos">
                         <div class="accordion-body">
-                            Si, hay un manual de usuario que estará disponible para aquellos que compren el software.
+                            <strong>No</strong>, por eso se recomienda usar la versión DEMO para asegurarse que le es útil.
                         </div>
                       </div>
                     </div>
@@ -202,7 +208,7 @@
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionDos">
                             <div class="accordion-body">
-                                No, solamente funciona con sistemas operativos Windows.
+                                <strong>No,</strong> solamente funciona en computadoras con sistemas operativos Windows.
                             </div>
                         </div>
                     </div>
@@ -214,7 +220,7 @@
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionDos">
                             <div class="accordion-body">
-                                Puede guardar todos los turnos que usted desee, no existe ningún impedimento al respecto.
+                                Puede guardar <strong>todos los turnos que usted desee</strong>, no existe ningún impedimento al respecto.
                             </div>
                         </div>
                     </div>
@@ -223,13 +229,9 @@
         </article>
         
         <article id="Final" class="d-flex justify-content-center align-items-center texto_descargar pe-4 ps-4">
-            <div style="width: 600px;">
-                <h2 class="text-dark text_final text-center mb-3">Descubre el funcionamiento en su versión demo</h2>
-                <div class="d-flex justify-content-center align-items-center">
-                    <button class="btn_demo bg-light">
-                        <a class="text-decoration-none" href="./img/tokyo-browser-window-with-tab-bars.png" download>Descargar</a>
-                    </button>
-                </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 600px;">
+                <h2 class="text-dark text_final text-center mb-3">Descubre el funcionamiento en su versión demo</h2> 
+                <a class="btn_demo text-decoration-none" href="./img/tokyo-browser-window-with-tab-bars.png" target="_blank">Descargar</a>  
             </div>
         </article>
     </main>
@@ -237,7 +239,7 @@
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="#Inicio" class="nav-link px-2 text-dark">Inicio</a></li>
           <li class="nav-item"><a href="#Intro" class="nav-link px-2 text-dark">Intro</a></li>
-          <li class="nav-item"><a href="#Caract" class="nav-link px-2 text-dark">Características</a></li>
+          <li class="nav-item"><a href="#Caracteristicas" class="nav-link px-2 text-dark">Características</a></li>
           <li class="nav-item"><a href="#Precio" class="nav-link px-2 text-dark">Precio</a></li> 
           <li class="nav-item"><a href="#Preguntas" class="nav-link px-2 text-dark">Preguntas</a></li>  
         </ul>
@@ -247,29 +249,49 @@
 
  
     
-    <!-- Modal -->
+    <!-- Modal Compra -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-4" id="exampleModalLabel">Transferencia bancaria</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">   
-                    <div class="d-flex">
-                        <h3 class="fs-5 text-secondary me-2">Nombre:</h3> 
-                        <h3 class="fs-5 text-secondary">Franco Gabriel Orellana</h3>  
-                    </div>
-                    <div class="d-flex">
-                        <h3 class="fs-5 text-secondary me-2">Banco:</h3> 
-                    </div>
-                    <div class="d-flex">
-                        <h3 class="fs-5 text-secondary me-2">CBU:</h3> 
+                <div class="modal-body">     
+                    <p class="h5 text-secondary">Nombre: Franco Gabriel Orellana</p>
+                    <p class="h5 text-secondary">CUIT: 20421442704</p>
+                    <p class="h5 text-secondary">Banco: Brubank</p>
+                    <p class="h5 text-secondary">N° CUENTA: 1301180064001</p>
+                    <p class="h5 text-secondary">CBU: 1430001713011800640017</p>
+                    <p class="h5 text-secondary">Alias: orellana.f.g.pesos.1</p> 
+                    <hr>
+                    <h3 class="text-center mb-3 text-danger">¡IMPORTANTE!</h3>
+                    <p class="fs-5 text-secondary" style="text-align: center;">Una vez realizado el pago, deberá enviar a <strong>turnowave@gmail.com</strong> copia del <strong>Comprobante electrónico de la operación, Nombre y Apellido completo.</strong></p>
+                    <p class="fs-5 text-secondary" style="text-align: center;">Luego de verificar la operación, <strong>puede demorar 24 horas</strong>, usted recibirá la confirmación del pago con el software adjunto.</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- Modal Gratis-->
+    <div class="modal fade" id="gratisModal" tabindex="-1" aria-labelledby="gratisModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="gratisModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">  
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="mb-3"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="green" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                            </svg> 
+                        </div> 
+                        <h3 class="fs-2 text-secondary text-center">Muchas gracias</h3> 
+                        <h3 class="fs-2 text-secondary text-center">por la confianza.</h3>  
                     </div> 
-                    <div class="d-flex">
-                        <h3 class="fs-5 text-secondary me-2">Alias:</h3> 
-                    </div> 
-                </div> 
+                </div>  
             </div>
         </div>
     </div>
