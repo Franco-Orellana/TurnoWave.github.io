@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Russo+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+    <title>TurnoWave Oficial | Software de administración de turnos</title>
+    <link rel="icon" href="./img/icono.ico" type="image/x-icon">
 </head>
   
 <body class="bg-light">  
@@ -24,7 +29,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
                     <div class="offcanvas-header"> 
-                        <span class="offcanvas-title text-light fw-bold" id="offcanvasLabel">Turno</span><span class="fw-normal">Wade</span>
+                        <span class="offcanvas-title text-light fw-bold" id="offcanvasLabel">Turno</span><span class="fw-normal">Wave</span>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -116,7 +121,7 @@
                                 <li>Sin pago</li> 
                                 <li>Disponible durante 2 días</li> 
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-demo" data-bs-toggle="modal" data-bs-target="#gratisModal">Descargar demo</button>
+                            <button type="button" class="w-100 btn btn-lg btn-demo" data-bs-toggle="modal" data-bs-target="#descargaModal">Descargar demo</button>
                         </div>
                     </div>
                 </div> 
@@ -133,7 +138,7 @@
                                 <li>Pago único</li>  
                                 <li>Disponible en todo momento</li> 
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-pago text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</button>
+                            <button type="button" class="w-100 btn btn-lg btn-pago text-light" data-bs-toggle="modal" data-bs-target="#compraModal">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -230,8 +235,8 @@
         
         <article id="Final" class="d-flex justify-content-center align-items-center texto_descargar pe-4 ps-4">
             <div class="d-flex flex-column justify-content-center align-items-center" style="width: 600px;">
-                <h2 class="text-dark text_final text-center mb-3">Descubre el funcionamiento en su versión demo</h2> 
-                <a class="btn_demo text-decoration-none" href="./img/tokyo-browser-window-with-tab-bars.png" target="_blank">Descargar</a>  
+                <h2 class="text-dark text_final text-center mb-3">Descubre el funcionamiento en su versión demo</h2>  
+                <a class="btn_demo text-decoration-none" data-bs-toggle="modal" data-bs-target="#descargaModal">Descargar</a> 
             </div>
         </article>
     </main>
@@ -250,11 +255,11 @@
  
     
     <!-- Modal Compra -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="compraModal" tabindex="-1" aria-labelledby="compraModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-4" id="exampleModalLabel">Transferencia bancaria</h1>
+                    <h1 class="modal-title fs-4" id="compraModalLabel">Transferencia bancaria</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">     
@@ -266,18 +271,18 @@
                     <p class="h5 text-secondary">Alias: orellana.f.g.pesos.1</p> 
                     <hr>
                     <h3 class="text-center mb-3 text-danger">¡IMPORTANTE!</h3>
-                    <p class="fs-5 text-secondary" style="text-align: center;">Una vez realizado el pago, deberá enviar a <strong>turnowave@gmail.com</strong> copia del <strong>Comprobante electrónico de la operación, Nombre y Apellido completo.</strong></p>
+                    <p class="fs-5 text-secondary" style="text-align: center;">Una vez realizado el pago, deberá enviar a <strong>turnowave@gmail.com</strong> copia del <strong>Comprobante electrónico de la operación, CUIT, Nombre y Apellido completo.</strong></p>
                     <p class="fs-5 text-secondary" style="text-align: center;">Luego de verificar la operación, <strong>puede demorar 24 horas</strong>, usted recibirá la confirmación del pago con el software adjunto.</p>
                 </div>  
             </div>
         </div>
     </div>
     <!-- Modal Gratis-->
-    <div class="modal fade" id="gratisModal" tabindex="-1" aria-labelledby="gratisModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalGracias" tabindex="-1" aria-labelledby="modalGraciasLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-4" id="gratisModalLabel"></h1>
+                    <h1 class="modal-title fs-4" id="modalGraciasLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">  
@@ -295,6 +300,47 @@
             </div>
         </div>
     </div>
+
+     <!--MODAL DE DESCARGA-->
+     <div class="modal fade" id="descargaModal" tabindex="-1" aria-labelledby="descargaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="descargaModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">   
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="mb-3">  
+                            <p class="fs-5 fw-bold">En caso de encontrarse con este tipo de mensajes:</p> 
+                            <img class="border border-4 mb-5 img-fluid d-block" src="./img/Sin título.png" alt="">  
+                            <p class="fs-5 fw-bold">Debe situarse sobre este, pulsar los tres puntos y por último pulsar sobre la opción 'Conservar'.</p> 
+                            <img class="border border-4 mb-5 img-fluid d-block" src="./img/Sin título2.png" alt="">
+                            <p class="fs-5 fw-bold">Le aparecerá la siguiente ventana, debe pulsar 'Mostrar más' donde encontrará opciones.</p> 
+                            <img class="border border-4 mb-5 img-fluid d-block" src="./img/Sin título3.png" alt="">
+                            <p class="fs-5 fw-bold">Por último tendrá que pulsar la opción 'Conservar de todos modos' para que se pueda descargar correctamente.</p> 
+                            <img class="border border-4 img-fluid d-block" src="./img/Sin título4.png" alt="">
+                        </div>  
+                    </div>  
+                </div> 
+                <div class="modal-footer">
+                    <button type="button" id="btnDescargar" class="btn btn-dark btn-lg" data-bs-target="#modalGracias" data-bs-toggle="modal">Descargar</button> 
+                </div> 
+            </div>
+        </div>
+    </div>
+  
+    <script>
+        // Función para iniciar la descarga y mostrar el modal al mismo tiempo
+        $('#btnDescargar').click(function() {
+          // Simular la descarga iniciando un temporizador
+          setTimeout(function() {
+            // Aquí puedes agregar código para iniciar la descarga, por ejemplo:
+            window.location.href = './download/TurnoWaveSetup-x64.msi'; 
+          }, 1000);
+        });
+    </script> 
+
     <script>
         const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
     </script>
