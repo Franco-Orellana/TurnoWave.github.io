@@ -147,7 +147,7 @@
 
         <article id="Preguntas" class="container pe-4 ps-4" style="max-width: 1200px;">
             <h2 class="text-center texto_preguntas mb-5">Preguntas frecuentes</h2>
-            <div class="row">
+            <div class="row d-none d-md-flex">
                 <div class="col-md-6 accordion" id="accordion">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
@@ -231,6 +231,101 @@
                     </div>
                 </div>
             </div> 
+
+            <!--PREGUNTAS PARA VISTA CELULAR-->
+            <div class="row d-md-none"> 
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button btn_preguntas collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Requisitos mínimos del sistema
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>SO: 64-bit Windows 10 o superior</li>
+                                    <li>Procesador: Intel® Celeron / Dual Core</li> 
+                                    <li>Memoria: 4 GB de RAM</li>  
+                                    <li>Red: No requiere conexión a Internet</li>
+                                    <li>Almacenamiento: 20MB de espacio disponible</li> 
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Puedo probar la demo antes de comprar el producto?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Si,</strong> podés descargar la DEMO. <strong>Dura 2 días</strong> y posee todas las funcionalidades que la versión pago.
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                ¿Cuánto dura la licencia?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                La licencia es para <strong>siempre!</strong>. No tiene mantenimiento mensual. Con la compra tenés 1 año de soporte.
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                ¿Hay reembolso una vez hecha la compra?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>No</strong>, por eso se recomienda usar la versión DEMO para asegurarse que le es útil.
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                ¿El software es multiplataforma?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>No,</strong> solamente funciona en computadoras con sistemas operativos Windows.
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Item 6 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed btn_preguntas fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                ¿Cuántos turnos puedo guardar?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Puede guardar <strong>todos los turnos que usted desee</strong>, no existe ningún impedimento al respecto.
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
         </article>
         
         <article id="Final" class="d-flex justify-content-center align-items-center texto_descargar pe-4 ps-4">
@@ -248,7 +343,7 @@
           <li class="nav-item"><a href="#Precio" class="nav-link px-2 text-dark">Precio</a></li> 
           <li class="nav-item"><a href="#Preguntas" class="nav-link px-2 text-dark">Preguntas</a></li>  
         </ul>
-        <p class="text-center text-dark">© 2024 Franco Orellana. Todos los derechos reservados.</p>
+        <p class="text-center text-dark">© 2024 TurnoWave. Todos los derechos reservados.</p>
     </footer>
 
 
