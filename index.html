@@ -14,38 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   
     <title>TurnoWave Oficial | Software de administración de turnos</title>
-    <link rel="icon" href="./img/icono.ico" type="image/x-icon">
-
- 
-    <style>
-        .video-container {
-            position: relative;
-            width: 100%; 
-            margin: auto;
-        }
-        .video-container video {
-            width: 100%;
-            height: auto;
-        }
-        .play-pause-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
-            border-radius: 50%; 
-            color: white; 
-            padding: 0px 15px 0px 15px;
-            font-size: 50px;
-            cursor: pointer;
-            display: none;
-        }
-        .video-container:hover .play-pause-button,
-        .play-pause-button.show {
-            display: block;
-        }
-    </style>
+    <link rel="icon" href="./img/icono.ico" type="image/x-icon"> 
 </head>
   
 <body class="bg-light">  
@@ -150,7 +119,7 @@
                                 <li>Software de prueba</li>
                                 <li>Todas las funciones</li> 
                                 <li>Sin pago</li> 
-                                <li>Disponible durante 2 días</li> 
+                                <li>Disponible durante 3 días</li> 
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-demo" data-bs-toggle="modal" data-bs-target="#descargaModal">Descargar demo</button>
                         </div>
@@ -499,54 +468,10 @@
                 </div> 
             </div>
         </div>
-    </div>
-
-    <!--MODAL DE VIDEO-->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content"> 
-                <div class="modal-body m-0 p-0 rounded border border-5 border-secondary-subtle">   
-                    <div class="d-flex flex-column align-items-center video-container">
-                        <video id="video" class="img-fluid d-block" width="auto" height="auto" controlsList="nodownload"  disablePictureInPicture>
-                            <source src="./img/Video.mp4" type="video/mp4">
-                        </video>   
-                        <button id="playPauseButton" class="play-pause-button" onclick="togglePlayPause()">
-                            <i id="playPauseIcon" class="bi bi-play-fill"></i>
-                        </button>                
-                    </div>  
-                </div>  
-            </div>
-        </div>
-    </div>
- 
-
+    </div> 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
-
-    <script>
-        var video = document.getElementById('video');
-        var playPauseButton = document.getElementById('playPauseButton');
-        var playPauseIcon = document.getElementById('playPauseIcon');
-
-        function togglePlayPause() {
-            if (video.paused) {
-                video.play();
-                playPauseIcon.classList.remove('bi-play-fill');
-                playPauseIcon.classList.add('bi-pause-fill');
-            } else {
-                video.pause();
-                playPauseIcon.classList.remove('bi-pause-fill');
-                playPauseIcon.classList.add('bi-play-fill');
-            }
-        }
-
-        $('#videoModal').on('hide.bs.modal', function () {
-            video.pause();
-            playPauseIcon.classList.remove('bi-pause-fill');
-            playPauseIcon.classList.add('bi-play-fill');
-        });
-    </script>
-  
+ 
     <script> 
         $('#btnDescargar').click(function() { 
           setTimeout(function() { 
